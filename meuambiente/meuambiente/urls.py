@@ -18,5 +18,6 @@ from django.urls import include, path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path("", myfgv_views.myfgv,name="myfgv"),
     path(r"myfgv/",include("myfgv.urls"))
 ]
