@@ -19,5 +19,5 @@ from myfgv import views as myfgv_views
 
 urlpatterns = [
     path("", myfgv_views.index,name="index"),
-    path(r"myfgv/",myfgv_views.myfgv, name='myfgv')
+    path(r"myfgv/",include("myfgv.urls"))
 ]
