@@ -15,9 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
+from myfgv import views as myfgv_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("", myfgv_views.myfgv,name="myfgv"),
+    path("", myfgv_views.index,name="index"),
     path(r"myfgv/",include("myfgv.urls"))
 ]
