@@ -18,6 +18,5 @@ from django.urls import include, path
 from myfgv import views as myfgv_views
 
 urlpatterns = [
-    path("", myfgv_views.index,name="index"),
-    path(r"myfgv/",include("myfgv.urls"))
+    path("", myfgv_views.index,name="index")
 ]
